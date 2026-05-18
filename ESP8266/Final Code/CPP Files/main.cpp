@@ -1,3 +1,24 @@
+//-----------------------------
+// Title: main.cpp
+//-----------------------------
+// Purpose: Main ESP8266 program for the REACH USB power controller.
+// It initializes sensors, USB control, LCD display, Boron communication, web server,
+// battery runtime estimation, and load-shedding behavior. The loop reads telemetry,
+// updates USB outputs, receives Boron commands, updates the LCD, estimates runtime,
+// and sends telemetry back to the Boron.
+// Dependencies: Arduino.h, SensorManager.h, USBController.h, LCDManager.h,
+//               BoronComm.h, WebServerManager.h, BatteryEstimator.h, math.h
+// Compiler: Platform IO
+// Author: Juan Jimenez
+// OUTPUTS: USB MOSFET control, LCD updates, Boron serial telemetry, runtime estimates,
+//          local web server responses
+// INPUTS: Sensor readings, Boron UART commands, web server requests, battery config,
+//         schedule data, priority data
+// Versions:
+//      V1.0: 5/18/2026 - Integrated USB control, sensor reading, LCD display,
+//                        Boron communication, battery estimation, and load shedding
+//-----------------------------
+
 /*#include <Arduino.h>
 #include "SensorManager.h"
 #include "USBController.h"
