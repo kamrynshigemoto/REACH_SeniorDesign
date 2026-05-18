@@ -1,3 +1,17 @@
+//-----------------------------
+// Title: BoronComm.h
+//-----------------------------
+// Purpose: Declares the BoronComm class used for serial communication between the
+// ESP8266 and Particle Boron. It receives time, schedule, USB command, priority,
+// and battery configuration messages, then sends USB telemetry and runtime estimates.
+// Dependencies: Arduino.h, USBController.h, BatteryEstimator.h
+// Compiler:PlatformIO for ESP8266
+// Author: Juan Jimenez
+// OUTPUTS: Serial messages to Boron, battery info received flag
+// INPUTS: USBController reference, BatteryEstimator reference, serial commands from Boron
+// Versions:
+//      V1.0: 5/18/2026 - Declared Boron serial communication interface with runtime support
+//-----------------------------
 /* #pragma once
 #include <Arduino.h>
 #include "USBController.h"
