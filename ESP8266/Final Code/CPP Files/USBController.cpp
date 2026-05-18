@@ -1,3 +1,20 @@
+//-----------------------------
+// Title: USBController.cpp
+//-----------------------------
+// Purpose: Implements USB output control for four MOSFET-switched USB ports.
+// It decides whether each USB output should be ON or OFF based on emergency-off,
+// manual override, schedule window, and default/manual state.
+// Dependencies: Arduino.h, USBController.h
+// Compiler: Platform IO
+// Author: Juan Jimenez
+// OUTPUTS: Digital MOSFET control signals, USB state strings, status line
+// INPUTS: Schedule data, manual commands, priority settings, emergency-off commands,
+//         current epoch time
+// Versions:
+//      V1.0: 5/18/2026 - Added USB state control, schedules, overrides, priority,
+//                        emergency-off handling, and status reporting
+//-----------------------------
+
 /*#include <Arduino.h>
 #include "USBController.h"
 
