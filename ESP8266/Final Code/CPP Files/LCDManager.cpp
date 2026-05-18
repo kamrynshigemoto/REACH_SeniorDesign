@@ -1,3 +1,19 @@
+//-----------------------------
+// Title: LCDManager.cpp
+//-----------------------------
+// Purpose: Implements the 20x4 I2C LCD display dashboard.
+// It shows all four USB outputs with voltage, current, ON/OFF state, supply voltage,
+// and schedule acknowledgement status.
+// Dependencies: LCDManager.h
+// Compiler: Platform IO
+// Author: Juan Jimenez
+// OUTPUTS: Text displayed on 20x4 I2C LCD
+// INPUTS: USB voltage/current values, supply voltage, USB state strings,
+//         schedule information, epoch time, schedule ACK flag
+// Versions:
+//      V1.0: 5/18/2026 - Added LCD startup message and live USB telemetry display
+//-----------------------------
+
 #include "LCDManager.h"
 
 LCDManager::LCDManager() : lcd(0x27, 20, 4) {}
