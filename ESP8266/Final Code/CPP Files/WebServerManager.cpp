@@ -1,3 +1,17 @@
+//-----------------------------
+// Title: WebServerManager.cpp
+//-----------------------------
+// Purpose: Implements the ESP8266 web server used to display a USB control page,
+// return USB status information, and process browser-based ON/OFF commands.
+// Dependencies: Arduino.h, WebServerManager.h
+// Compiler: Platform IO
+// Author: Juan Jimenez
+// OUTPUTS: HTML control page, HTTP status responses, USB control updates
+// INPUTS: HTTP route requests, idx/state query parameters, USBController data
+// Versions:
+//      V1.0: 5/18/2026 - Added web page, status route, and USB control route
+//-----------------------------
+
 #include <Arduino.h>
 #include "WebServerManager.h"
 
