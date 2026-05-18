@@ -1,3 +1,19 @@
+//-----------------------------
+// Title: Batteryestimator.cpp
+//-----------------------------
+// Purpose: Implements battery runtime and state-of-charge estimation.
+// It uses piecewise voltage curves for LiFePO4 and Lead-Acid batteries, converts
+// supply voltage into estimated state-of-charge, and estimates remaining runtime
+// using battery capacity and total current draw.
+// Dependencies: BatteryEstimator.h
+// Compiler:PlatformIO for ESP8266
+// Author: Juan Jimenez
+// OUTPUTS: Estimated battery SoC and runtime remaining in hours
+// INPUTS: Battery voltage, battery chemistry, battery amp-hour capacity,
+//         total system current draw
+// Versions:
+//      V1.0: 5/18/2026 - Added LFP/Lead-Acid SoC curves and runtime estimation
+//-----------------------------
 #include "BatteryEstimator.h"
 
 // ---------------------------------------------------------------------------
