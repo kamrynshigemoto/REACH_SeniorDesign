@@ -1,3 +1,21 @@
+//-----------------------------
+// Title: BoronComm.cpp
+//-----------------------------
+// Purpose: Implements UART communication between the ESP8266 and Particle Boron.
+// It parses incoming TIME, BATCFG, PRIORITY, SCHED, and USB ON/OFF messages,
+// updates USBController and BatteryEstimator, and sends USB telemetry plus runtime
+// estimates back to the Boron.
+// Dependencies: BoronComm.h
+// Compiler: Platform IO
+// Author: Juan Jimenez
+// OUTPUTS: USB telemetry serial messages, RUNTIME messages, ACK:BATCFG response
+// INPUTS: Serial commands from Boron, USB states, sensor readings, supply voltage,
+//         runtime estimate
+// Versions:
+//      V1.0: 5/18/2026 - Added Boron command parsing, battery config parsing,
+//                        telemetry output, priority updates, and runtime reporting
+//-----------------------------
+
 /*#include "BoronComm.h"
 
 
