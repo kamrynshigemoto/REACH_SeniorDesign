@@ -1,3 +1,19 @@
+//-----------------------------
+// Title: SensorManager.cpp
+//-----------------------------
+// Purpose: Implements sensor initialization and reading for four USB outputs.
+// It reads USB current from INA260 sensors, USB voltage from ADS1115 channels,
+// and supply/battery voltage from analog input A0.
+// Dependencies: Arduino.h, SensorManager.h
+// Compiler: Platform IO
+// Author: Juan Jimenez
+// OUTPUTS: Current in amps, USB voltage, calibrated supply voltage
+// INPUTS: INA260 sensors at I2C addresses 0x40, 0x41, 0x44, 0x45;
+//         ADS1115 at 0x48; analog input A0
+// Versions:
+//      V1.0: 5/18/2026 - Added current, voltage, and supply voltage sensor reading
+//-----------------------------
+
 #include <Arduino.h>
 #include "SensorManager.h"
 
