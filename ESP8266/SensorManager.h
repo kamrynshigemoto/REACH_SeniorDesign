@@ -1,3 +1,16 @@
+//-----------------------------
+// Title: SensorManager.h
+//-----------------------------
+// Purpose: Declares the SensorManager class used to read USB current sensors,
+// USB voltage sensors, and the main supply/battery voltage.
+// Dependencies: Adafruit_ADS1X15.h, Adafruit_INA260.h
+// Compiler: Arduino IDE / PlatformIO for ESP8266
+// Author: Juan Jimenez
+// OUTPUTS: USB current readings, USB voltage readings, supply voltage reading
+// INPUTS: ADS1115 voltage sensor channels, INA260 current sensors, analog supply input
+// Versions:
+//      V1.0: 5/18/2026 - Declared sensor reading interface for USB and supply telemetry
+//-----------------------------
 #pragma once
 
 #include <Adafruit_ADS1X15.h>
