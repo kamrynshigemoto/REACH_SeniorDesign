@@ -5,7 +5,7 @@
 // It stores USB states, schedules, manual overrides, priority status, emergency-off
 // load-shedding status, and the current epoch time used for schedule decisions.
 // Dependencies: Arduino.h
-// Compiler: Arduino IDE / PlatformIO for ESP8266
+// Compiler:PlatformIO for ESP8266
 // Author: Juan Jimenez
 // OUTPUTS: USB state data, schedule ACK state, priority flags, emergency-off flags
 // INPUTS: USB MOSFET pins, USB names, schedules, overrides, priorities, epoch time
