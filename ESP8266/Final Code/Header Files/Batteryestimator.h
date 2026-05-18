@@ -1,3 +1,17 @@
+//-----------------------------
+// Title: Batteryestimator.h
+//-----------------------------
+// Purpose: Declares the BatteryEstimator class used to estimate battery state-of-charge
+// and runtime remaining based on battery chemistry, battery capacity, supply voltage,
+// and total current draw.
+// Dependencies: Arduino.h
+// Compiler:PlatformIO for ESP8266
+// Author: Juan Jimenez
+// OUTPUTS: Runtime estimate in hours, battery state-of-charge estimate
+// INPUTS: Battery amp-hour capacity, battery chemistry, supply voltage, total current
+// Versions:
+//      V1.0: 5/18/2026 - Declared battery configuration, SoC, and runtime estimation interface
+//-----------------------------
 #pragma once
 #include <Arduino.h>
 
