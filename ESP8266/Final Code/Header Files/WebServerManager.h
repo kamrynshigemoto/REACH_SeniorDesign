@@ -4,7 +4,7 @@
 // Purpose: Declares the WebServerManager class used by the ESP8266 to host a local web server
 // for viewing USB outlet status and manually controlling USB outputs through HTTP routes.
 // Dependencies: Arduino.h, ESP8266WebServer.h, USBController.h
-// Compiler: Arduino IDE / PlatformIO for ESP8266
+// Compiler:PlatformIO for ESP8266
 // Author: Juan Jimenez
 // OUTPUTS: Web server routes for root page, status page, and USB control requests
 // INPUTS: HTTP requests from browser/client, USBController reference
