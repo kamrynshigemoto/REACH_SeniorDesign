@@ -4,7 +4,7 @@
 // Purpose: Declares the LCDManager class used to control a 20x4 I2C LCD display.
 // The display shows USB voltage, current, ON/OFF state, supply voltage, and schedule ACK.
 // Dependencies: Arduino.h, LiquidCrystal_I2C.h
-// Compiler: Arduino IDE / PlatformIO for ESP8266
+// Compiler:PlatformIO for ESP8266
 // Author: Juan Jimenez
 // OUTPUTS: LCD display update interface
 // INPUTS: USB voltages, USB currents, supply voltage, USB states, schedule data,
