@@ -1,3 +1,18 @@
+//-----------------------------
+// Title: USBController.h
+//-----------------------------
+// Purpose: Declares the USBController class that manages four USB MOSFET outputs.
+// It stores USB states, schedules, manual overrides, priority status, emergency-off
+// load-shedding status, and the current epoch time used for schedule decisions.
+// Dependencies: Arduino.h
+// Compiler: Arduino IDE / PlatformIO for ESP8266
+// Author: Juan Jimenez
+// OUTPUTS: USB state data, schedule ACK state, priority flags, emergency-off flags
+// INPUTS: USB MOSFET pins, USB names, schedules, overrides, priorities, epoch time
+// Versions:
+//      V1.0: 5/18/2026 - Declared USB output control, scheduling, override, priority,
+//                        and emergency load-shedding interface
+//-----------------------------
 /*#pragma once
 #include <Arduino.h>
 
