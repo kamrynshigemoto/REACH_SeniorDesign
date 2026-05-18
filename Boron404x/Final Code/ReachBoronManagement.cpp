@@ -1,5 +1,5 @@
 //-----------------------------
-// Title: ReachBoronManagement.h
+// Title: ReachBoronManagement.cpp
 //-----------------------------
 // Purpose: This program runs on a Particle Boron and manages the REACH power system.
 // It communicates with Particle Cloud webhooks to receive outlet schedules, outlet commands,
